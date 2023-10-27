@@ -6,12 +6,12 @@ export const Friends = ({ friends }) => {
         <li className={css.friendsItem} key={el.id}>
           <span className="status">{el.isOnline ? 'Online' : 'Offline'}</span>
           <img
-            className="avatar"
+            className={css.avatar}
             src={el.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="name">{el.name}</p>
+          <p className={css.name}>{el.name}</p>
         </li>
       ))}
     </ul>

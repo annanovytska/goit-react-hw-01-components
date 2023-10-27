@@ -1,4 +1,4 @@
-import { css } from './statistics.css';
+import css from './statistics.module.css';
 
 const randomColor = () => {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -7,15 +7,15 @@ const randomColor = () => {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
+    <section className={css.statistics}>
+      <h2 className={css.title}>{title}</h2>
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {stats.map(stat => (
           <li
             style={{ backgroundColor: randomColor() }}
             key={stat.id}
-            className="item"
+            className={css.item}
           >
             <span className="label">{stat.label}</span>
             <span className="percentage">{stat.percentage}</span>
