@@ -1,0 +1,24 @@
+.profile {
+  border: 1px solid gray;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: center;
+}

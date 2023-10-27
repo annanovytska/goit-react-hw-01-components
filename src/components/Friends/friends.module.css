@@ -1,0 +1,10 @@
+.friendList {
+  list-style: none;
+  width: 400px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.friendsItem {
+  border: 1px solid gray;
+}
